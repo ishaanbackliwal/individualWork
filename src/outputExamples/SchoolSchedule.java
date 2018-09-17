@@ -4,7 +4,7 @@ public class SchoolSchedule {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Ishaan Backliwal School Schedule");
+		System.out.println("Ishaan Backliwal Semester 1 School Schedule");
 		System.out.println(" ");
 		System.out.println("Block \t Term 1 \t\t\t Term 2");
 		System.out.println("1 \t AP Micro \t\t\t Dystopian and Utopian Lit");
