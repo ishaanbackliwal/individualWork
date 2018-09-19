@@ -6,7 +6,7 @@ public class Monkey {
 		// TODO Auto-generated method stub
 		int monkey = -999;
 		Scanner input = new Scanner(System.in);
-		System.out.println("What is the height of the avarge adult monkey (in inches)? ");
+		System.out.println("What is the height of the average adult monkey (in inches)? ");
 		monkey = input.nextInt();
 		System.out.println("You said adult monkeys are about " + monkey + " inches tall.");
 	}
