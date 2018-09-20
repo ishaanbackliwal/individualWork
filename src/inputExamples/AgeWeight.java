@@ -1,5 +1,7 @@
 package inputExamples;
+
 import java.util.Scanner;
+
 public class AgeWeight {
 
 	public static void main(String[] args) {
