@@ -14,11 +14,11 @@ public class CuttingGrass {
 		double area = -999.0;
 		double cost = -999.0;
 		System.out.println("What is the width of the lawn in yards?");
-		width = input.nextInt();
+		width = input.nextDouble();
 		System.out.println("What is the length of the lawn in yards?");
-		length = input.nextInt();
+		length = input.nextDouble();
 		System.out.println("What is the radius of the fountain in feet?");
-		radius = input.nextInt();
+		radius = input.nextDouble();
 		areaFountain = (Math.pow(radius * 3, 2) * Math.PI);
 		area = (width * length) - areaFountain;
 		cost = area / 100.0 * 1.25;
