@@ -13,7 +13,7 @@ public class BetterSocialSecurity {
 		int legal = -999;
 		System.out.println("What is your age? Enter an integer.");
 		age = input.nextInt();
-		System.out.println("What is your social security number? After inputting each number, press enter.");
+		System.out.println("What is your social security number?");
 		ssn = input.nextInt();
 		legal = 18 - age;
 		four = ssn % 10000;
@@ -21,6 +21,7 @@ public class BetterSocialSecurity {
 		System.out.println("You will be 18 in " + legal + " year(s)");
 		System.out.println("Your social security number is " + ssn);
 		System.out.println("The last four digits of your social security number are " + four);
+		input.close();
 		
 	}
 
