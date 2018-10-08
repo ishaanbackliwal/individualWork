@@ -36,5 +36,26 @@ public class House {
 		double time = volume / 300.0;
 		System.out.println("It will take " + time + " hours to fill the pool.");
 	}
-
+	public void fillSandbox() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is the length of the sandbox?");
+		double length = input.nextDouble();
+		System.out.println("What is the width of the sandbox?");
+		double width = input.nextDouble();
+		System.out.println("What is the depth of the sandbox?");
+		double depth = input.nextDouble();
+		System.out.println("How much sand can you transport per hour in cubic feet?");
+		double sand = input.nextDouble();
+		double time = length * width * depth / sand;
+		System.out.println("It will take " + time + " hours to fill the sandbox.");
+	}
+	public void fillSandbox2(double length, double width, double depth, double sand) {
+		double time = length * width * depth / sand;
+		System.out.println("It will take " + time + " hours to fill the sandbox.");
+	}
+	public double fillSandbox3(double length3, double width3, double depth3, double sand3) {
+		double time = length3 * width3 * depth3 / sand3;
+		return time;
+	}
+	
 }
