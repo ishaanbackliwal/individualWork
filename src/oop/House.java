@@ -7,7 +7,7 @@ public class House {
 	public House(){
 
 	}
-	public void wallPaint(){
+	public void paintWall() {
 		Scanner input = new Scanner(System.in);
 		double height = -999.0;
 		double width = -999.0;
@@ -21,5 +21,20 @@ public class House {
 		time = area / 200 * 60;
 		System.out.println("It will take " + time + " minutes to paint the wall.");
 	}
-	
+	public void plantGarden(double rows) {
+		Scanner input = new Scanner(System.in);
+		double length = -999.0;
+		double row = 10 / rows;
+		System.out.println("What is the legnth of the garden?");
+		length = input.nextDouble();
+		double time = row * length / 15.0 * 2.0;
+		System.out.println("It will take " + time + " hours to plant the garden.");
+	}
+	public void fillPool(double radius, double height) {
+		Scanner input = new Scanner(System.in);
+		double volume = radius * radius * Math.PI * height;
+		double time = volume / 300.0;
+		System.out.println("It will take " + time + " hours to fill the pool.");
+	}
+
 }
