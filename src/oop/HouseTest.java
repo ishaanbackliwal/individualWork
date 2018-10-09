@@ -21,7 +21,7 @@ public class HouseTest {
 		double height = input.nextDouble();
 		jeb.fillPool(radius,  height);
 	
-		jeb.fillSandbox();
+		jeb.fillSandbox(); //without passing or returning any values
 		
 		System.out.println("What is the length of the sandbox?");
 		double length = input.nextDouble();
@@ -31,7 +31,7 @@ public class HouseTest {
 		double depth = input.nextDouble();
 		System.out.println("How much sand can you transport per hour in cubic feet?");
 		double sand = input.nextDouble();
-		jeb.fillSandbox2(length, width, depth, sand);
+		jeb.fillSandbox2(length, width, depth, sand); //pass values to method, no return of any values
 		
 		System.out.println("What is the length of the sandbox?");
 		double length3 = input.nextDouble();
@@ -41,7 +41,7 @@ public class HouseTest {
 		double depth3 = input.nextDouble();
 		System.out.println("How much sand can you transport per hour in cubic feet?");
 		double sand3 = input.nextDouble();
-		double time = jeb.fillSandbox3(length3, width3, depth3, sand3);
+		double time = jeb.fillSandbox3(length3, width3, depth3, sand3); //pass values to calculations method, return time value
 		System.out.println("It will take " + time + " hours to fill the sandbox.");
 	}
 
