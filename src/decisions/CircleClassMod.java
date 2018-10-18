@@ -8,6 +8,9 @@ public class CircleClassMod {
 		radius = 10.0;
 	}
 	public CircleClassMod(double newRadius) {
+		if (newRadius <= 0) {
+			radius = 10.0;
+		}
 		radius = newRadius;
 	}
 	public double getRadius() {
