@@ -112,16 +112,63 @@ public class InClassActivities {
 		System.out.println("Your lucky number is: " + (int)luckyNumber);
 		*/
 		
-		// WINNING A PRIZE /////////////////////////////////////////////////////////////////////////////////////////////////
-		System.out.println("How much money did you recieve for your 5th birthday?");
+		/* WINNING A PRIZE /////////////////////////////////////////////////////////////////////////////////////////////////
+		System.out.println("How much money did you receive for your 5th birthday?");
 		double money = input.nextDouble();
 		if (Math.abs(money-Math.sqrt(84.3)) <= 0.1) {
-			System.out.println("You will recieve the 'good' prize!");
+			System.out.println("You will receive the 'good' prize!");
 		}
 		else {
-			System.out.println("You will recieve the 'bad' prize.");
+			System.out.println("You will receive the 'bad' prize.");
 		}
+		*/
+		
+		/* SALARY DETERMINING JOB	////////////////////////////////////////////////////////////////////////////////////////
+		System.out.println("What is your yearly salary?");
+		double salary = input.nextDouble();
+		if (salary <= 20000) {
+			System.out.println("You are a worker.");
+		}
+		else {
+			if (salary <= 40000) {
+				System.out.println("You are a manager.");
+			}
+			else {
+				if (salary <= 100000) {
+					System.out.println("You are a CEO.");
+				}
+				else {
+					System.out.println("You are an owner.");
+				}
+			}
+		}
+		*/
+		
+		// GRADE CALCULATION	////////////////////////////////////////////////////////////////////////////////////////////
+		System.out.println("What is your test average?");
+		double testAvg = input.nextDouble();
+		System.out.println("What is your homework average?");
+		double hwAvg = input.nextDouble();
+		System.out.println("Is your teacher nice? Enter 1 for yes and 2 for no.");
+		double teacher = input.nextDouble();
+		double grade = 0;
+		if (teacher == 1 && hwAvg > testAvg) {
+			grade = hwAvg;
+		}
+		else {
+			if (teacher == 1 && hwAvg < testAvg) {
+				grade = testAvg;
+			}
+			else {
+				if (hwAvg < testAvg) {
+					grade = hwAvg;
+				}
+				else {
+					grade = testAvg;
+				}
+			}
+		}
+		System.out.println("Your grade will be " + grade + "%");
 		//
 	}
-
 }
