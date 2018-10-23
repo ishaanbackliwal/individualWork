@@ -144,7 +144,7 @@ public class InClassActivities {
 		}
 		*/
 		
-		// GRADE CALCULATION	////////////////////////////////////////////////////////////////////////////////////////////
+		/* GRADE CALCULATION	////////////////////////////////////////////////////////////////////////////////////////////
 		System.out.println("What is your test average?");
 		double testAvg = input.nextDouble();
 		System.out.println("What is your homework average?");
@@ -169,6 +169,98 @@ public class InClassActivities {
 			}
 		}
 		System.out.println("Your grade will be " + grade + "%");
+		*/
+		
+		/* LOOPS -- DISPLAY 0-100	////////////////////////////////////////////////////////////////////////////////////////
+		int count = 0;						// 1- Get
+		while (count <= 100) {				// 2- Test
+			System.out.println(count);		// 3- Use
+			count++;						// 1- Get
+		}
+		*/
+		
+		/* LOOPS -- DISPLAY MULTIPLES OF 2 FROM 0-100,000	/////////////////////////////////////////////////////////////////
+		int count = 0;
+		while (count <= 100000) {
+			System.out.println(count);
+			count += 2;
+		}
+		*/
+		
+		/* LOOPS -- DISPLAY MULTIPLES OF 2 FROM 0 TO INPUTTED NUMBER	////////////////////////////////////////////////////
+		System.out.println("Enter the integer you want multiples of 2 until: ");
+		double max = input.nextInt();	//If negative # entered, program will skip while loop and go on to next code
+		int count = 0;
+		while (count <= max) {
+			System.out.println(count);
+			count += 2;
+		}
+		*/
+		
+		/* LOOPS - SUM OF ALL MULTIPLES OF 2 FROM 0 TO INPUTTED NUMBER	/////////////////////////////////////////////////////
+		System.out.println("Enter the integer you want multiples of 2 until: ");
+		double max = input.nextInt();
+		int count = 0;
+		int sum = 0;
+		while (count <= max) {
+			sum += count;
+			count += 2;
+		}
+		System.out.println(sum);
+		*/
+		
+		/* ENTER 9999 TO QUIT	////////////////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a number (9999 to quit).");
+		int num = input.nextInt();
+		while (num != 9999) {
+			num = num * 2;
+			System.out.println("Your number doubles is " + num);
+			System.out.println("Enter a number (9999 to quit).");
+			num = input.nextInt();
+		}
+			System.out.println("You quit the program.");
+		*/
+		
+		/* LAST ONE BUT DONT DISPLAY SUM UNTIL THEY QUIT AND DONT DOUBLE VALUES	/////////////////////////////////////////////
+		System.out.println("Enter a number (9999 to quit).");
+		double num = input.nextDouble();
+		double sum = 0;
+		while (num != 9999) {
+			sum += num;
+			System.out.println("Enter a number (9999 to quit).");
+			num = input.nextDouble();
+		}
+		System.out.println("Your sum is " + sum);
+		*/
+		
+		/* SAME AS ABOVE BUT WITH AVERAGE	////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a number (9999 to quit).");
+		double num = input.nextDouble();
+		double sum = 0;
+		double counter = 0;
+		double avg = 0;
+		while (num != 9999) {
+			sum += num;
+			System.out.println("Enter a number (9999 to quit).");
+			num = input.nextDouble();
+			counter++;
+		}
+		avg = sum / counter;
+		System.out.println("Your average is " + avg);
+		*/
+		
+		// SAME AS EARLIER BUT DISPLAY LARGEST VALUE
+		System.out.println("Enter a number (9999 to quit).");
+		double num = input.nextDouble();
+		double big = 0;
+		while (num != 9999) {
+			System.out.println("Enter a number (9999 to quit).");
+			num = input.nextDouble();
+			if (num > big && num != 9999) {
+				big = num;
+			}
+		}
+		System.out.println("The largest number you entered is " + big);
 		//
 	}
 }
