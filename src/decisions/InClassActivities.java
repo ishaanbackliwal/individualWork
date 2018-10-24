@@ -249,7 +249,7 @@ public class InClassActivities {
 		System.out.println("Your average is " + avg);
 		*/
 		
-		// SAME AS EARLIER BUT DISPLAY LARGEST VALUE
+		/* SAME AS EARLIER BUT DISPLAY LARGEST VALUE	////////////////////////////////////////////////////////////////////////
 		System.out.println("Enter a number (9999 to quit).");
 		double num = input.nextDouble();
 		double big = 0;
@@ -261,6 +261,38 @@ public class InClassActivities {
 			}
 		}
 		System.out.println("The largest number you entered is " + big);
+		*/
+		
+		/* DO WHILE LOOP ENTER 9999 TO EXIT	///////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a number.");
+		double num = input.nextDouble();
+		do {
+			System.out.println("Enter a number (9999 to quit).");
+			num = input.nextDouble();
+		}
+		while (num != 9999);
+		*/
+		
+		// DISPLAY RANGE WHEN QUIT
+		System.out.println("Enter a number.");
+		double small = input.nextDouble();
+		double num = 0;
+		double big = 0;
+		do {
+			System.out.println("Enter a number (9999 to quit).");
+			num = input.nextDouble();
+			if (num > big && num != 9999) {
+				big = num;
+			}
+			else {
+				if (num < small && num != 9999) {
+					small = num;
+				}
+			}
+		}
+		while (num != 9999);
+			double range = big - small;
+			System.out.println("Range: " + range);
 		//
 	}
 }
