@@ -273,7 +273,7 @@ public class InClassActivities {
 		while (num != 9999);
 		*/
 		
-		// DISPLAY RANGE WHEN QUIT
+		/* DISPLAY RANGE WHEN QUIT
 		System.out.println("Enter a number.");
 		double small = input.nextDouble();
 		double num = 0;
@@ -293,6 +293,56 @@ public class InClassActivities {
 		while (num != 9999);
 			double range = big - small;
 			System.out.println("Range: " + range);
+		*/
+		
+		/* NESTED LOOPS	////////////////////////////////////////////////////////////////////////////////////////////////////////
+		int counter = 0;
+		int row = 0;
+		for (row = 1; row <= 4; row++) {
+			for (counter = 1; counter <=5; counter++) {
+				System.out.println((counter * row) + " ");
+			}
+		}
+		*/
+		
+		/* MORE NESTED LOOPS	////////////////////////////////////////////////////////////////////////////////////////////////
+		int i = 0;
+		int row = 0;
+		for (row = 1; row <= 4; row++) {
+			for (i = 1; i <= 5; i++) {
+				if (i != 3) {
+					System.out.println(i);
+				}
+				else {
+					System.out.println(row);
+				}
+			}
+		}
+		*/
+		
+		// MORE MORE NESTED LOOPS	////////////////////////////////////////////////////////////////////////////////////////////
+		int in = 0;
+		int num = 0;
+		int counter = 0;
+		int divisors = 0;
+		int mostDiv = 0;
+		int big = 0;
+		System.out.println("Enter the upper limit of the range in which to find the number with the biggest amount of divisors: ");
+		in = input.nextInt();
+		
+		for (num = 1; num <= in; num++) {
+			divisors = 0;
+			for (counter = 1; counter <= num; counter++) {
+				if (num % counter == 0) {
+					divisors++;
+					if (divisors > mostDiv) {
+						mostDiv = divisors;
+						big = num;
+					}
+				}
+			}
+		}
+		System.out.println("Number with the most divisors between 1 and " + in + ": " + big);
 		//
 	}
 }
