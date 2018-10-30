@@ -320,7 +320,7 @@ public class InClassActivities {
 		}
 		*/
 		
-		// MORE MORE NESTED LOOPS	////////////////////////////////////////////////////////////////////////////////////////////
+		/* MORE MORE NESTED LOOPS	////////////////////////////////////////////////////////////////////////////////////////////
 		int in = 0;
 		int num = 0;
 		int counter = 0;
@@ -343,6 +343,6 @@ public class InClassActivities {
 			}
 		}
 		System.out.println("Number with the most divisors between 1 and " + in + ": " + big);
-		//
+		*/
 	}
 }
