@@ -32,6 +32,7 @@ public class InClassStrings {
 		System.out.println("Name: " + name);
 		*/
 		
+		
 		/* charAt PROGRAM	////////////////////////////////////////////////////////////////////////////////////
 		System.out.println("Enter a sentence: ");
 		String sentence = input.nextLine();
@@ -43,6 +44,7 @@ public class InClassStrings {
 		System.out.println("Entire sentence: " + sentence);
 		*/
 		
+		
 		/* contains PROGRAM	///////////////////////////////////////////////////////////////////////////////////
 		System.out.println("Enter a sentence: ");
 		String sentence = input.nextLine();
@@ -50,7 +52,8 @@ public class InClassStrings {
 		System.out.println(sentence.contains("Bob"));
 		*/
 		
-		// compareTo PROGRAM	///////////////////////////////////////////////////////////////////////////////
+		
+		/* compareTo PROGRAM	///////////////////////////////////////////////////////////////////////////////
 		System.out.println("Enter a name: ");
 		String name1 = input.nextLine();
 		
@@ -68,7 +71,44 @@ public class InClassStrings {
 				System.out.println(name2 + " comes before " + name1 + " alphabetically.");
 			}
 		}
-		//
+		*/
+		
+		
+		/* indexOf PROGRAM	///////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a sentence: ");
+		String sentence = input.nextLine();
+		
+		System.out.println("First index where the letter X is used: " + sentence.indexOf('X'));
+		*/
+		
+		
+		/* length PROGRAM	///////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a sentence: ");
+		String sentence = input.nextLine();
+		
+		System.out.println("Number of characters in input sentence: " + sentence.length());
+		*/
+		
+		
+		/* length PROGRAM #2	///////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a sentence: ");
+		String sentence = input.nextLine();
+		
+		int length = sentence.length();
+		
+		for (int counter = 0; counter < length; counter++) {
+			System.out.println(sentence.charAt(counter));
+		}
+		*/
+		
+		
+		/* toLowerCase PROGRAM	/////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a sentence: ");
+		String sentence = input.nextLine();
+		
+		System.out.println(sentence.toLowerCase());
+		System.out.println(sentence);
+		*/
 	}
 
 }
