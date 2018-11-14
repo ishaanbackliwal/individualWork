@@ -137,6 +137,37 @@ public class InClassStrings {
 		while (decision != 0);
 		System.out.println("Password confirmed");
 		*/
+		
+		
+		/* DISPLAY EVERY 4th CHARACTER	/////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a sentence: ");
+		String sentence = input.nextLine();
+		int length = sentence.length();
+		for (int counter = 3; counter < length; counter += 4) {
+			System.out.println(sentence.charAt(counter));
+		}
+		*/
+		
+		
+		/* REMOVE SPACES AND 'A'	/////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a sentence: ");
+		String sentence = input.nextLine();
+		int length = sentence.length();
+		for (int counter = 0; counter < length; counter++) {
+			if (sentence.charAt(counter) != 'a' && sentence.charAt(counter) != ' ') {
+				System.out.print(sentence.charAt(counter));
+			}
+		}
+		*/
+		
+		
+		/* SSN	////////////////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter your SSN: ");
+		String ssn = input.nextLine();
+		System.out.println(ssn.substring(5));
+		System.out.println(ssn.substring(3, 5));
+		System.out.println(ssn.substring(0, 3));
+		*/
 	}
 
 }
