@@ -109,6 +109,34 @@ public class InClassStrings {
 		System.out.println(sentence.toLowerCase());
 		System.out.println(sentence);
 		*/
+		
+		
+		/* toUpperCase PRGOGRAM	/////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a name: ");
+		String name1 = input.nextLine();
+		System.out.println("Enter a another name: ");
+		String name2 = input.nextLine();
+		if (name1.compareTo(name2) < 0) {
+			System.out.println(name1.toUpperCase());
+		}
+		else {
+			System.out.println(name2.toUpperCase());
+		}
+		*/
+		
+		
+		/* PASSWORD w/ DO-WHILE LOOP	//////////////////////////////////////////////////////////////////////
+		System.out.println("Enter password: ");
+		String pass1 = input.nextLine();
+		int decision = 1;
+		do {
+			System.out.println("Confirm password: ");
+			String pass2 = input.nextLine();
+			decision = pass1.compareTo(pass2);
+		}
+		while (decision != 0);
+		System.out.println("Password confirmed");
+		*/
 	}
 
 }
