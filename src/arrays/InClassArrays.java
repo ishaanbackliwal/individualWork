@@ -136,7 +136,7 @@ public class InClassArrays {
 		*/
 
 		
-		// RECTANGLE	////////////////////////////////////////////////////////////////////////////////////////////
+		/* RECTANGLE	////////////////////////////////////////////////////////////////////////////////////////////
 		int num = 3;
 		int min = 10;
 		int max = 56;
@@ -167,6 +167,45 @@ public class InClassArrays {
 		Rectangle newRec = rec[0];
 		rec[0] = rec[smallIndex];
 		rec[smallIndex] = newRec;
+		*/
+		
+		
+		/* TWO DIMENSIONAL ARRAY	///////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a number of rows: ");
+		int maxRow = input.nextInt();
+		System.out.println("Enter a number of columns: ");
+		int maxCol = input.nextInt();
+		int max = 100;
+		int min = 0;
+		int[][] random = new int[maxRow][maxCol];
+		for (int row = 0; row < random.length; row++) {
+			for (int column = 0; column < random[0].length; column++) {
+				random[row][column] = min + generator.nextInt(max - min + 1);
+				System.out.print(random[row][column] + " ");
+			}
+			System.out.println();
+		}
+		*/
+		
+		
+		// DISPLAY THE TOTAL VALUES IN THE ARRAY	///////////////////////////////////////////////////////////////////
+		System.out.println("Enter a number of rows: ");
+		int maxRow = input.nextInt();
+		System.out.println("Enter a number of columns: ");
+		int maxCol = input.nextInt();
+		int max = 100;
+		int min = 0;
+		int sum = 0;
+		int[][] random = new int[maxRow][maxCol];
+		for (int row = 0; row < random.length; row++) {
+			for (int column = 0; column < random[0].length; column++) {
+				random[row][column] = min + generator.nextInt(max - min + 1);
+				sum += random[row][column];
+				System.out.print(random[row][column] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("\nSum of all elements in the array: " + sum);
 		//
 	}
 
