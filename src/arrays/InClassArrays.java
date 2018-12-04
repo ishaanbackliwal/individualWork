@@ -188,7 +188,7 @@ public class InClassArrays {
 		*/
 		
 		
-		// DISPLAY THE TOTAL VALUES IN THE ARRAY	///////////////////////////////////////////////////////////////////
+		/* DISPLAY THE TOTAL VALUES IN THE ARRAY	///////////////////////////////////////////////////////////////////
 		System.out.println("Enter a number of rows: ");
 		int maxRow = input.nextInt();
 		System.out.println("Enter a number of columns: ");
@@ -206,7 +206,107 @@ public class InClassArrays {
 			System.out.println();
 		}
 		System.out.println("\nSum of all elements in the array: " + sum);
-		//
+		*/
+		
+		
+		/* 3RD DIMENSIONS DISPLAY SUM	////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a number of rows: ");
+		int maxRow = input.nextInt();
+		System.out.println("Enter a number of columns: ");
+		int maxCol = input.nextInt();
+		System.out.println("Enter a number for the 3rd dimension: ");
+		int max3rd = input.nextInt();
+		int max = 100;
+		int min = 0;
+		int sum = 0;
+		int[][][] random = new int[maxRow][maxCol][max3rd];
+		for (int row = 0; row < random.length; row++) {
+			for (int column = 0; column < random[0].length; column++) {
+				for (int third = 0; third < random[0][0].length; third++) {
+					random[row][column][third] = min + generator.nextInt(max - min + 1);
+					sum += random[row][column][third];
+				}
+			}
+		}
+		System.out.println("Sum: " + sum);
+		*/
+		
+		
+		/* ENTER NAMES AND OUTPUT ROW BY ROW	////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a number of rows: ");
+		int maxRow = input.nextInt();
+		System.out.println("Enter a number of columns: ");
+		int maxCol = input.nextInt();
+		
+		input.nextLine();
+		
+		String[][] random = new String[maxRow][maxCol];
+		for (int row = 0; row < random.length; row++) {
+			for (int column = 0; column < random[0].length; column++) {
+				System.out.println("Enter a name: ");
+				random[row][column] = input.nextLine();
+			}
+		}
+		for (int row = 0; row < random.length; row++) {
+			System.out.print("|  ");
+			for (int column = 0; column < random[0].length; column++) {
+				System.out.print(random[row][column] + "  |  ");
+			}
+			System.out.println();
+		}
+		*/
+		
+		
+		/* DISPLAY LENGTH OF NAMES	////////////////////////////////////////////////////////////////////////////////////
+		System.out.println("Enter a number of rows: ");
+		int maxRow = input.nextInt();
+		System.out.println("Enter a number of columns: ");
+		int maxCol = input.nextInt();
+		
+		input.nextLine();
+		
+		String[][] random = new String[maxRow][maxCol];
+		for (int row = 0; row < random.length; row++) {
+			for (int column = 0; column < random[0].length; column++) {
+				System.out.println("Enter a name: ");
+				random[row][column] = input.nextLine();
+			}
+		}
+		for (int row = 0; row < random.length; row++) {
+			System.out.print("|  ");
+			for (int column = 0; column < random[0].length; column++) {
+				System.out.print(random[row][column].length() + "  |  ");
+			}
+			System.out.println();
+		}
+		*/
+		
+		
+		/* DISPLAY AGES USING FRIEND CLASS	////////////////////////////////////////////////////////////////////////////
+		int maxRows = 18;
+		int maxCol = 5;
+		int min = 0;
+		int max = 100;
+		Friend[][] ages = new Friend[maxRows][maxCol];
+		for (int rows = 0; rows < ages.length; rows++) {
+			for (int columns = 0; columns < ages[0].length; columns++) {
+				int ranAge = min + generator.nextInt(max - min + 1);
+				String name = " ";
+				ages[rows][columns] = new Friend(name, ranAge);
+			}
+		}
+		for (int rows = 0; rows < ages.length; rows++) {
+			for (int columns = 0; columns < ages[0].length; columns++) {
+				if (ages[rows][columns].getAge() < 10) {
+					System.out.print(" " + ages[rows][columns].getAge() + "  |  ");
+				}
+				else {
+					System.out.print(ages[rows][columns].getAge() + "  |  ");
+				}
+			}
+			System.out.println();
+		}
+		*/
 	}
 
 }
