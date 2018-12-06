@@ -46,6 +46,33 @@ public class InClassArrayLists {
 		friends.add(0, new Friend("Daisy", 3));
 		friends.set(2, me);
 		*/
+		
+		
+		/* DISPLAY NAMES IN ARRAY LIST
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("Kyle Lowry");
+		names.add("Kawhi Leonard");
+		names.add(1, "Jeremy Lin");
+		System.out.println("Enter your name pls: ");
+		names.add(input.nextLine());
+		for (int counter = 0; counter < names.size(); counter++){
+			String temporaryName = names.get(counter);
+			System.out.println(temporaryName);
+		}
+		*/
+		
+		
+		// 
+		ArrayList<Friend> friends = new ArrayList<Friend>();
+		Friend me = new Friend("Ishaan", 17);
+		friends.add(me);
+		friends.add(new Friend("Malcolm", 7));
+		friends.add(0, new Friend("Daisy", 3));
+		friends.set(2, me);
+		for (int counter = 0; counter < names.size(); counter++){
+			System.out.println(names.get(counter).getAge());
+		}
+		//
 	}
 
 }
