@@ -48,7 +48,7 @@ public class InClassArrayLists {
 		*/
 		
 		
-		/* DISPLAY NAMES IN ARRAY LIST
+		/* DISPLAY NAMES IN ARRAY LIST	//////////////////////////////////////////////////////////////////////////////////////////
 		ArrayList<String> names = new ArrayList<String>();
 		names.add("Kyle Lowry");
 		names.add("Kawhi Leonard");
@@ -62,17 +62,83 @@ public class InClassArrayLists {
 		*/
 		
 		
-		// 
+		/* DOES NOT WORK	////////////////////////////////////////////////////////////////////////////////////////////////////////
 		ArrayList<Friend> friends = new ArrayList<Friend>();
 		Friend me = new Friend("Ishaan", 17);
 		friends.add(me);
 		friends.add(new Friend("Malcolm", 7));
 		friends.add(0, new Friend("Daisy", 3));
 		friends.set(2, me);
-		for (int counter = 0; counter < names.size(); counter++){
-			System.out.println(names.get(counter).getAge());
+		for (int counter = 0; counter < friends.size(); counter++){
+			System.out.println(friends.get(counter).getAge());
 		}
-		//
+		*/
+		
+		
+		/* USE RECTANGLE CLASS	////////////////////////////////////////////////////////////////////////////////////////////////////
+		ArrayList<Rectangle> thing = new ArrayList<Rectangle>();
+		int max = 70;
+		int min = 50;
+		for (int counter = 0; counter < 400; counter++){
+			int randL = min + generator.nextInt(max - min + 1);
+			int randW = min + generator.nextInt(max - min + 1);
+			thing.add(new Rectangle(randL, randW));
+		}
+		for (int counter = 399; counter >= 0; counter--) {
+			System.out.println(thing.get(counter).area());
+		}
+		*/
+		
+		
+		/* ENTER NAMES, DELETE FIRST AND LAST, DISPLAY REST	////////////////////////////////////////////////////////////////////////
+		ArrayList<String> names = new ArrayList<String>();
+		int bigness = 5;
+		for (int counter = 0; counter < bigness; counter++) {
+			System.out.println("Enter a name: ");
+			names.add(input.nextLine());
+		}
+		names.remove(0);
+		names.remove(names.size() -1);
+		for (int counter = 0; counter < bigness - 2; counter++) {
+			System.out.println(names.get(counter));
+		}
+		*/
+		
+		
+		/* MORE RECTANGLE STUFFS	///////////////////////////////////////////////////////////////////////////////////////////////
+		ArrayList<Rectangle> thing = new ArrayList<Rectangle>();
+		int max = 70;
+		int min = 50;
+		int bigness = 400;
+		for (int counter = 0; counter < bigness; counter++){
+			int randL = min + generator.nextInt(max - min + 1);
+			int randW = min + generator.nextInt(max - min + 1);
+			thing.add(new Rectangle(randL, randW));
+		}
+		int num = min + generator.nextInt(max - min + 1);
+		System.out.println("Length of removed rectangle: " + thing.remove(num).getLength());
+		for (int counter = bigness - 2; counter >= 0; counter--) {
+			System.out.println(thing.get(counter).area());
+		}
+		*/
+		
+		
+		/* REMOVE A THINGY AND SET INDEX 0 AS THE THINGY YOU REMOVED	/////////////////////////////////////////////////////////
+		ArrayList<Rectangle> thing = new ArrayList<Rectangle>();
+		int max = 70;
+		int min = 50;
+		int bigness = 400;
+		for (int counter = 0; counter < bigness; counter++){
+			int randL = min + generator.nextInt(max - min + 1);
+			int randW = min + generator.nextInt(max - min + 1);
+			thing.add(new Rectangle(randL, randW));
+		}
+		Rectangle gone = thing.remove(bigness-1);
+		thing.set(0, gone);
+		for (int counter = bigness-2; counter >= 0; counter--) {
+			System.out.println(thing.get(counter).area());
+		}
+		*/
 	}
 
 }
