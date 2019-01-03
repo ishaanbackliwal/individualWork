@@ -7,6 +7,9 @@ public class Greeter {
 	public Greeter(){
 		age = 17;
 	}
+	public Greeter(int xAge) {
+		age = xAge;
+	}
 
 	public void sayHello() {
 		System.out.println("Hello");
