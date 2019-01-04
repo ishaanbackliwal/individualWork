@@ -1,7 +1,7 @@
 package interfaces;
 
-public class Circle {
-    private double radius;
+public class Circle implements Shape {
+	private double radius;
     public Circle() {
         radius = 10;
     }

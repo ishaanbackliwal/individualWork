@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Teacher {
+public class Teacher implements Person {
 
 	String name;
 	int teacherAge;
@@ -22,12 +22,15 @@ public class Teacher {
 		return teacherAge;
 	}
 	public String getName() {
-		if (name.indexOf(" ") < 0)
+		if (name.indexOf(" ") < 0) {
 			name = " " + name;
-		if (gender)
+		}
+		if (gender) {
 			return ("Mr. " + name.substring(name.indexOf(" ")));
-		else
+		}
+		else {
 			return ("Mrs. " + name.substring(name.indexOf(" ")));
+		}
 	}
 	public double getBalance() {
 		return bankBalance;
