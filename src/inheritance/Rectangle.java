@@ -1,21 +1,16 @@
 package inheritance;
 
-public class Rectangle extends Quad {
-	
-	Quad shape = new Quad();
-	
+public class Rectangle extends Parallelogram implements Geo {
+		
 	public Rectangle() {
-	
+		super();
 	}
 	
-	public Rectangle(double xS1, double xS2) {
-		shape.setS1(xS1);
-		shape.setS2(xS2);
-		shape.setS3(xS1);
-		shape.setS4(xS2);
+	public Rectangle(double length, double width) {
+		super(length, width, width);						//second width value is representative of height
 	}
 	
 	public double area() {
-		return shape.getS1() * shape.getS2();
+		return super.getS1() * super.getS2();
 	}
 }
