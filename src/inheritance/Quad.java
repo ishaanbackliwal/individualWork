@@ -56,5 +56,9 @@ public class Quad {
 	public double perimeter() {
 		return s1 + s2 + s3 + s4;
 	}
+	
+	public String toString() {
+		return ("\nQuad object...\nSide 1: " + s1 + "\nSide 2: " + s2 + "\nSide 3: " + s3 + "\nside 4: " + s4);
+	}
 
 }

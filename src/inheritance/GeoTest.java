@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class GeoTest {
 
 	public static void main(String[] args) {
+		/*	IDK WHAT THIS IS	////////////////////////////////////////////////////////////////////////////////////////////////
 		ArrayList<Geo> shape = new ArrayList<Geo>();
 		shape.add(new Rectangle());
 		shape.add(new Rectangle());
@@ -26,6 +27,12 @@ public class GeoTest {
 			}
 		}
 		System.out.println("Type: " + type + "\nBiggest Area: " + big);
+		*/
+		
+		// TESTING STUFF	/////////////////////////////////////////////////////////////////////////////////////////////////
+		Parallelogram gru = new Parallelogram();
+		System.out.println(gru.toString());
+		//
 	}
 
 }

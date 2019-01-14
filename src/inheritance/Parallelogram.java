@@ -20,4 +20,7 @@ public class Parallelogram extends Quad implements Geo {
 	public double area() {
 		return super.getS2() * h;
 	}
+	public String toString() {
+		return ("Parallellogram object (extending Quad)...\nHeight: " + h + super.toString());
+	}
 }
